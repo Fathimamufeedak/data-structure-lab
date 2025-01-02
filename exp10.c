@@ -111,7 +111,7 @@ void display(){
         printf("\n.............................\n");
         int front_pos=front,rear_pos=rear;
         if(front_pos>rear_pos){
-            while(front_pos>rear_pos)
+            while(front_pos!=rear_pos +1)
             {
                 printf(" %d ",queue[front_pos]);
                 front_pos=((front_pos+1))%MAX;
